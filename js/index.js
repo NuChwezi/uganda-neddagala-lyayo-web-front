@@ -1,5 +1,5 @@
 var app_actions = _.map(["OMUTI","SCHOOL","TV", "TECH", "LOGIN"], function (t){ return {title: t} }); 
-var offices = _.map(["PRESIDENT","SECRETARY","MINISTRY of ICT", "DEFENSE", "TREASURY"], function (t){ return {title: t} }); 
+var offices = _.map(["PRESIDENT","SECRETARY","ICT", "DEFENSE", "TREASURY"], function (t){ return {title: t} }); 
 
 var vapp = new Vue({
 	el: "#app",

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Uganda Neddagala Ly'ayo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
@@ -35,34 +35,38 @@
   </div>
 
   <div class="row">
-   <div class="container">
-    <center>
-     <div class="btn-group" role="group" aria-label="Multiplicity">
-      <a href="#" class="btnx-l btnx-ok" v-for="n in max_multiplicity" v-on:click.prevent="set_multiplicity(n)">{{ n }}</a>
-    </center>
-    </div>
-   </div>
+      <div class="container">
+          <center>
+
+          <div class="row">
+           <div class="container">
+             <div class="btn-group" role="group" aria-label="Multiplicity">
+              <a href="#" class="btnx-l btnx-ok" v-for="n in max_multiplicity" v-on:click.prevent="set_multiplicity(n)">{{ n }}</a>
+            </div>
+           </div>
+          </div>
+             
+          <div class="row">
+           <div class="container">
+             <div class="btn-group" role="group" aria-label="Actions">
+              <a href="#" class="btnx-l btnx-warning" v-for="action in actions" v-on:click.prevent="do_action(action.title)" >{{ action.title }}</a>
+            </div>
+           </div>
+          </div>
+             
+          <div class="row">
+           <div class="container">
+            <div class="btn-group" role="group" aria-label="Footer">
+                <a href="#" class="btnx-l btnx-cancel" v-for="office in offices" v-on:click.prevent="do_action('office')">{{ office.title }}</a>
+            </div>
+           </div>
+          </div>
+
+          </center>
+
+      </div>
+
   </div>
-	 
-	 <div class="row">
-   <div class="container">
-    <center>
-     <div class="btn-group" role="group" aria-label="Actions">
-      <a href="#" class="btnx-l btnx-warning" v-for="action in actions" v-on:click.prevent="do_action(action.title)" >{{ action.title }}</a>
-    </center>
-    </div>
-   </div>
-  </div>
-	 
-	 <div class="row">
-   <div class="container">
-    <center>
-			<div class="btn-group" role="group" aria-label="Footer">
-				<a href="#" class="btnx-l btnx-cancel" v-for="office in offices" v-on:click.prevent="do_action('office')">{{ office.title }}</a>
-			</div>
-		 </center>
-		 </div>
-	 </div>
 
  </div>
 </section>
