@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ministry of ICT - Uganda Neddagala Ly'ayo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <section id="app">
+ <div class="container-fluid">
+
+  <div class="row">
+   <div class="container banner">
+		 <h1 class="neon small">{{ title }}</h1> 
+   </div>
+  </div>
+
+  <div class="row">
+   <div class="container feature-container">
+    <center>
+     <canvas id="tree" v-bind:width="size" v-bind:height="size"></canvas>
+    </center>
+   </div>
+  </div>
+
+  <div class="row">
+   <div class="container">
+    <center>
+     <div class="btn-group" role="group" aria-label="Multiplicity">
+      <a href="#" class="btnx-l btnx-ok" v-for="n in max_multiplicity" v-on:click.prevent="set_multiplicity(n)">{{ n }}</a>
+    </center>
+    </div>
+   </div>
+  </div>
+	 
+	 <div class="row">
+   <div class="container">
+    <center>
+     <div class="btn-group" role="group" aria-label="Actions">
+      <a href="#" class="btnx-l btnx-warning" v-for="action in actions" v-on:click.prevent="do_action(action.title)" >{{ action.title }}</a>
+    </center>
+    </div>
+   </div>
+  </div>
+	 
+	 <div class="row">
+   <div class="container">
+    <center>
+			<div class="btn-group" role="group" aria-label="Footer">
+				<a href="#" class="btnx-l btnx-cancel" v-for="office in offices" v-on:click.prevent="do_action('office')">{{ office.title }}</a>
+			</div>
+		 </center>
+		 </div>
+	 </div>
+
+ </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

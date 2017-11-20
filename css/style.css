@@ -1,0 +1,139 @@
+body {
+  background: black;
+  font-family: 'Abel', sans-serif;
+  color: fushia;
+}
+
+.feature-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+}
+
+.banner {
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.banner h1 {
+  font-size: 5vw;
+}
+
+#tree {
+  margin-top: -10vw;
+}
+
+/* ********************
+ * better buttons (https://codepen.io/Jasius/pen/EyAXXy)
+ *********************/
+.btnx-l {
+  background: 0 0;
+  border: 2px solid #3498DB;
+  color: #3498DB;
+  transition: all .5s;
+  padding: 7px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+  margin: 5px;
+  -webkit-tap-highlight-color: transparent;
+}
+.btnx-l:hover, .btnx-l:focus {
+  color: #fff;
+  background: #3498DB;
+}
+
+.btnx {
+  background: 0 0;
+  border: 2px solid #3498DB;
+  color: #3498DB;
+  transition: all .5s;
+  padding: 6px 16px;
+  font-size: 18px;
+  border-radius: 2px;
+  margin: 5px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.btnx:hover, .btnx:focus {
+  color: #fff;
+  background: #3498DB;
+}
+
+.btnx-s {
+  background: 0 0;
+  border: 2px solid #3498DB;
+  color: #3498DB;
+  transition: all .5s;
+  padding: 4px 15px;
+  font-size: 15px;
+  border-radius: 2px;
+  margin: 5px;
+  -webkit-tap-highlight-color: transparent;
+}
+.btnx-s:hover, .btnx-s:focus {
+  color: #fff;
+  background: #3498DB;
+}
+
+.btnx-solid {
+  background: #3498DB;
+  color: #fff;
+}
+.btnx-solid:hover, .btnx-solid:focus {
+  background: #75b9e7;
+  border-color: #75b9e7;
+}
+
+.btnx-cancel {
+  border-color: #cd201f;
+  color: #cd201f;
+}
+.btnx-cancel:hover, .btnx-cancel:focus {
+  background: #cd201f;
+}
+
+.btnx-ok {
+  border-color: #009e7e;
+  color: #009e7e;
+}
+.btnx-ok:hover, .btnx-ok:focus {
+  background: #009e7e;
+}
+
+.btnx-warning {
+  border-color: #F3752B;
+  color: #F3752B;
+}
+.btnx-warning:hover, .btnx-warning:focus {
+  background: #F3752B;
+}
+
+.btnx-disabled {
+  border-color: #A49A87;
+  color: #A49A87;
+  pointer-events: none;
+}
+.btnx-disabled:hover, .btnx-disabled:focus {
+  background: #A49A87;
+}
+
+/*************************
+ * some truly awesome stuff!
+ *************************/
+body {
+  background-color: #010a00;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  font-size: 1rem;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.neon {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+}
